@@ -4,6 +4,7 @@ using System.Diagnostics;
 
 namespace MVC_test.Controllers
 {
+    [Route ("Romzes")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -13,6 +14,7 @@ namespace MVC_test.Controllers
             _logger = logger;
         }
 
+       // [Route ("tree")]
         public IActionResult Index()
         {
             return View();
